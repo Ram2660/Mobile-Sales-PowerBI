@@ -1,0 +1,9 @@
+1.Average_Price = AVERAGE(Sales_Data[Price Per Unit])
+2.MTD = TOTALMTD(Sales_Data[Total_Sales],Custom_Calender[Date].[Date])
+3.QTD = TOTALQTD(Sales_Data[Total_Sales],Custom_Calender[Date].[Date])
+4.Same Period Last Year = CALCULATE(Sales_Data[Total_Sales],
+SAMEPERIODLASTYEAR(Custom_Calender[Date].[Date]))
+5.Total_Quantity = SUM(Sales_Data[Units Sold])
+6.Total_Sales = SUMX(Sales_Data,Sales_Data[Units Sold]*Sales_Data[Price Per Unit])
+7.Transactions = COUNTROWS(Sales_Data)
+8.YTD = TOTALYTD(Sales_Data[Total_Sales],Custom_Calender[Date].[Date])
